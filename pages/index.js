@@ -152,7 +152,7 @@ export default function Home() {
                 height={"50px"}
                 value={titre[0]}
                 onChange={(e) => updatedField(0, 0, e.target.value)}
-                width={"90%"}
+                width={{base:"100%",lg:"90%"}}
               />
             </Box>
             <Box>
@@ -164,11 +164,11 @@ export default function Home() {
                 height={"50px"}
                 value={quantity[0]}
                 onChange={(e) => updatedField(1, 0, e.target.value)}
-                width={"90%"}
+                width={{base:"100%",lg:"90%"}}
                 border={"1px solid black"}
               />
             </Box>
-            <IoIosAddCircle onClick={AddFiels} fontSize={32} />
+            <IoIosAddCircle onClick={AddFiels} fontSize={{base:64,lg:32}} />
           </Box>
 
           <Box
@@ -195,7 +195,7 @@ export default function Home() {
                           onChange={(e) =>
                             updatedField(0, index, e.target.value)
                           }
-                          width={"90%"}
+                          width={{base:"100%",lg:"90%"}}
                         />
                       </Box>
                       <Box>
@@ -209,7 +209,7 @@ export default function Home() {
                           onChange={(e) =>
                             updatedField(1, index, e.target.value)
                           }
-                          width={"90%"}
+                          width={{base:"100%",lg:"90%"}}
                           border={"1px solid black"}
                         />
                       </Box>
