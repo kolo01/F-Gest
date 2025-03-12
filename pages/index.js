@@ -168,7 +168,7 @@ export default function Home() {
                 border={"1px solid black"}
               />
             </Box>
-            <IoIosAddCircle onClick={AddFiels} fontSize={{base:64,lg:32}} />
+            <IoIosAddCircle onClick={AddFiels} fontSize={{base:64,lg:34}} />
           </Box>
 
           <Box
@@ -215,7 +215,7 @@ export default function Home() {
                       </Box>
                       <MdDeleteForever
                         onClick={() => removeField(index)}
-                        fontSize={34}
+                        fontSize={{base:64,lg:34}}
                       />
                     </Flex>
                   </>
